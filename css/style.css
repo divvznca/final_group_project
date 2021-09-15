@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 body{
-  background-color:#FCF6F1;
+  background-color:#d4711f;
     margin: 0;
      padding: 0;
      font-family: 'Roboto', sans-serif;
 }
+
+
  .navigation {
      height: 55px;
      background-color:#ffffff;
@@ -19,6 +21,11 @@ body{
    -ms-flex-align:center;
    align-items:center;
    -ms-flex-pack:center;
+   
+}
+
+a{
+    text-decoration: none;
 }
 
  .brand a, .brand a:visited {
@@ -39,7 +46,6 @@ body{
 }
  nav ul li {
      float: left;
-
 }
  nav ul li a,nav ul li a:visited {
      display: block;
@@ -57,6 +63,7 @@ body{
  nav ul li a:hover, nav ul li a:visited:hover {
      background: #AAAFDF;
      color: #ffffff;
+     text-decoration: none;
 }
  .navbar-dropdown li a{
      background: #2581DC;
