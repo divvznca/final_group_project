@@ -1,21 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-body{
-  background-color:#d4711f;
-    margin: 0;
-     padding: 0;
-     font-family: 'Roboto', sans-serif;
-}
-
-
+/*Navbar*/
  .navigation {
-     height: 55px;
-     background-color:#ffffff;
+     height: 70px;
+     background-color:#fff;
 }
  
       .brand {
      position: absolute;
      left:50%;
-     top:5px;
+     top:10px;
    display:-ms-flexbox;
    display:flex;
    -ms-flex-align:center;
@@ -30,8 +22,9 @@ a{
 
  .brand a, .brand a:visited {
      color: #913FBE;
-     text-decoration: none;
+     text-decoration: none;     
 }
+
  .nav-container {
      max-width: 1000px;
      margin: 0 auto;
@@ -42,7 +35,7 @@ a{
  nav ul {
      list-style: none;
      margin: 0;
-     padding: 0;
+     padding: 8px;
 }
  nav ul li {
      float: left;
@@ -55,6 +48,8 @@ a{
      background: #ffffff ;
      text-decoration: none;
    text-align:center;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size:18px;
 }
  nav ul li a{
      background: transparent;
@@ -180,14 +175,15 @@ a{
   width: 30%;
   margin:22px;
   float: left;
+  
 }
 
 .button-three{
   text-align: center;
   cursor: pointer;
   font-size:18px;
+  
 }
-
 
 
 /*Button Three*/
@@ -196,7 +192,7 @@ a{
    float:right;
     background-color: #AAAFDF;
     border: none;
-  margin:6.6px;
+  margin:12px;
     padding: 8px;
    width:150px;
     text-align: center;
@@ -206,6 +202,7 @@ a{
     overflow: hidden;
    border-radius: 30px;
    color:#ffffff;
+   
   
 }
 
@@ -242,7 +239,6 @@ a{
     margin-top:8px;
     background-color: #AAAFDF;
     border: none;
-  
     padding: 10px;
     width: 100px;
     font-size:15px;
@@ -252,6 +248,262 @@ a{
     text-decoration: none;
     overflow: hidden;
   border-radius:25px;
+} 
+}
+
+/*Heroimg and text*/
+
+.heroimg{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+min-height: 15em;    
+height: 700px;
+align-self: center;
+background-repeat: no-repeat;
+background-size: cover;
+align-items: flex-end;
+justify-content:flex-start;
+background-image: url("/images/Heroimg@2x.png");
+}
+
+
+.heroimg h1{
+    text-align: center;
+    position: relative;
+    color: #000000;
+padding-top: 150px;
+font-family: boucherie-cursive,sans-serif;
+font-weight: 400;
+font-style: normal;
+padding-right: 150px;
+}
+
+@media screen and (max-width:800px) {
+    .heroimg{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+min-height: 15em; 
+width: 100%;   
+align-self: center;
+background-repeat: no-repeat;
+background-size: cover;
+align-items: contain;
+justify-content: flex-start;
+background-image: url("/images/mobile\ first\ heroimg.png");
+background-position-x: center;
+}
+
+.heroimg h1{
+  padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+    position: relative;
+    padding-top: 5%;
+    font-family: boucherie-cursive,sans-serif;
+font-size: 30px;
+font-style: normal;
+margin-top: 230px;
+}
+}
+
+/*Img and text-about us*/
+
+.col-text {
+  height:22em;
+}
+.grid-flex {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  flex-direction: row; 
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+}
+.col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.col-left {
+  -webkit-box-ordinal-group:-1;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+.col-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col-text p{
+  font-family: 'Source Sans Pro', sans-serif;
+   font-size:18px;
+  width: 140%;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.col-text h4{
+  margin-top: 70px;
+  font-family: boucherie-cursive,sans-serif;
+font-weight: 400;
+font-style: normal;
+  text-align: center;
+  font-size: 50px;
+  padding-left: 120px;
+  
+}
+
+.col-text h5{
+    margin-top: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+   font-size:15px;
+   line-height: 30px;
+   font-weight: bold;
+   width:140%;
+  margin-bottom: -5px;
+  font-size: 20px;
+  text-align: center;
+  font-family: roboto, sans-serif;
+}
+
+.Aligner-item {
+  width: 60%;
+}
+.col-image {
+  background-size: contain;
+    background-repeat: no-repeat;
+  background-position:center center;
+}
+
+#button-about{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+@media (max-width: 860px) {
+  .grid-flex {
+    height: 40em;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column; 
+   }
+  .col {
+    order:vertical;
+  }
+  .col-left {
+    -webkit-box-ordinal-group:0;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+
+  .col-text h4{
+  margin-top: 100px;
+  font-family: boucherie-cursive,sans-serif;
+font-weight: 400;
+font-style: normal;
+  text-align: center;
+  font-size: 35px;
+  padding-right: 80px;
+  
+  
+}
+  .col-text div p {
+      width: 100%;
+    padding: 1em;
+    line-height: 25px;
+    font-size: 18px;
+    
 }
   
+
+.col-text h5{
+    width: 100%;
+  font-size: 20px;
+  text-align: center;
+  font-family: roboto, sans-serif;
+}
+  .Aligner-item {
+    width: 100%;
+  }
+
+
+#button-about{
+    margin-right: 50%;
+    margin-left: 35%;
+}
+
+  
+
+.col-image {
+  background-size: contain;
+    background-repeat: no-repeat;
+  background-position:center;
+  
+}
+}
+
+
+
+/*
+@media (max-width: 990px) {
+  .grid-flex {
+    height: 40em;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column; 
+   }
+  .col {
+    order:vertical;
+  }
+  .col-left {
+    -webkit-box-ordinal-group:0;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  .col-text p {
+    
+    line-height: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+   font-size:18px;
+  width: 130%;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  padding-top: 30px;
+  text-align: center;
+    
+}
+  .col-text h4{
+  font-size: 15px;
+  text-align: center;
+  
+}
+
+  .Aligner-item {
+    width: 90%;
+  }
+
+  .col-image {
+  background-size: contain;
+    background-repeat: no-repeat;
+  background-position:center center;
+  width:130%;
+  margin-left: 20px;
+}
 }
